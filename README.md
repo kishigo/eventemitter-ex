@@ -1,0 +1,2 @@
+Very simple extension of the raix:eventemitter meteor package.  
+Wrap the client side listener invocation with try-catch so that if a particular listener throws, downstream listeners still get called.   
