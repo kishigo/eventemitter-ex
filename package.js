@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function (api) {
 	api.versionsFrom('1.2.1');
 	api.use('ecmascript');
+	api.use('underscore');
 	api.use('raix:eventemitter');
 	api.export('EventEmitterEx');
 	api.addFiles('eventemitter-ex.js');
@@ -20,7 +21,8 @@ Package.onUse(function (api) {
 
 Package.onTest(function (api) {
 	api.use('ecmascript');
+	api.use('underscore');
 	api.use('tinytest');
 	api.use('kishigo:eventemitter-ex');
-	api.addFiles('eventemitter-ex-tests.js');
+	api.addFiles('eventemitter-ex-tests.js', 'client');
 });
